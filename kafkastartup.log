@@ -1,0 +1,713 @@
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[2018-03-16 11:48:17,296] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 1.0-IV0
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = PLAINTEXT://10.128.64.119:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 1.0-IV0
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = null
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2018-03-16 11:48:17,428] INFO starting (kafka.server.KafkaServer)
+[2018-03-16 11:48:17,430] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2018-03-16 11:48:17,450] INFO Starting ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2018-03-16 11:48:17,451] INFO Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:host.name=ip-10-128-64-119.ew2.vcint.com (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:java.version=1.8.0_161 (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:java.home=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-0.b14.el7_4.x86_64/jre (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:java.class.path=:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/aopalliance-repackaged-2.5.0-b32.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/argparse4j-0.7.0.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/commons-lang3-3.5.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/connect-api-1.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/connect-file-1.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/connect-json-1.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/connect-runtime-1.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/connect-transforms-1.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/guava-20.0.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/hk2-api-2.5.0-b32.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/hk2-locator-2.5.0-b32.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/hk2-utils-2.5.0-b32.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jackson-annotations-2.9.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jackson-core-2.9.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jackson-databind-2.9.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jackson-jaxrs-base-2.9.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jackson-jaxrs-json-provider-2.9.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jackson-module-jaxb-annotations-2.9.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/javassist-3.20.0-GA.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/javassist-3.21.0-GA.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/javax.annotation-api-1.2.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/javax.inject-1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/javax.inject-2.5.0-b32.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/javax.servlet-api-3.1.0.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/javax.ws.rs-api-2.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jersey-client-2.25.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jersey-common-2.25.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jersey-container-servlet-2.25.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jersey-container-servlet-core-2.25.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jersey-guava-2.25.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jersey-media-jaxb-2.25.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jersey-server-2.25.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jetty-continuation-9.2.22.v20170606.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jetty-http-9.2.22.v20170606.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jetty-io-9.2.22.v20170606.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jetty-security-9.2.22.v20170606.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jetty-server-9.2.22.v20170606.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jetty-servlet-9.2.22.v20170606.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jetty-servlets-9.2.22.v20170606.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jetty-util-9.2.22.v20170606.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/jopt-simple-5.0.4.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/kafka_2.11-1.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/kafka_2.11-1.0.1-sources.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/kafka_2.11-1.0.1-test-sources.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/kafka-clients-1.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/kafka-log4j-appender-1.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/kafka-streams-1.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/kafka-streams-examples-1.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/kafka-tools-1.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/log4j-1.2.17.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/lz4-java-1.4.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/maven-artifact-3.5.0.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/metrics-core-2.2.0.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/osgi-resource-locator-1.0.1.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/plexus-utils-3.0.24.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/reflections-0.9.11.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/rocksdbjni-5.7.3.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/scala-library-2.11.12.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/slf4j-api-1.7.25.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/slf4j-log4j12-1.7.25.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/snappy-java-1.1.4.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/validation-api-1.1.0.Final.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/zkclient-0.10.jar:/home/idirizo/kafka_2.11-1.0.1/bin/../libs/zookeeper-3.4.10.jar (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:os.version=3.10.0-693.11.6.el7.x86_64 (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:user.name=root (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:user.home=/root (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,452] INFO Client environment:user.dir=/home/idirizo/kafka_2.11-1.0.1 (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,453] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=org.I0Itec.zkclient.ZkClient@9f116cc (org.apache.zookeeper.ZooKeeper)
+[2018-03-16 11:48:17,466] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2018-03-16 11:48:17,474] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2018-03-16 11:48:17,479] INFO Accepted socket connection from /127.0.0.1:59166 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-16 11:48:17,486] INFO Client attempting to establish new session at /127.0.0.1:59166 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-16 11:48:17,488] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[2018-03-16 11:48:17,491] INFO Established session 0x1622e9ef3090000 with negotiated timeout 6000 for client /127.0.0.1:59166 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-16 11:48:17,496] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1622e9ef3090000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-16 11:48:17,498] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[2018-03-16 11:48:17,739] INFO Cluster ID = h-LilLyASV6FSiVdyHQevQ (kafka.server.KafkaServer)
+[2018-03-16 11:48:17,785] INFO [ThrottledRequestReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-16 11:48:17,787] INFO [ThrottledRequestReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-16 11:48:17,799] INFO [ThrottledRequestReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-16 11:48:17,844] INFO Loading logs. (kafka.log.LogManager)
+[2018-03-16 11:48:17,911] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/test-0/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/test-0/00000000000000000000.timeindex, /tmp/kafka-logs/test-0/00000000000000000000.index, and /tmp/kafka-logs/test-0/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:17,947] INFO Recovering unflushed segment 0 in log test-0. (kafka.log.Log)
+[2018-03-16 11:48:17,958] INFO Loading producer state from offset 9 for partition test-0 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:17,960] INFO Loading producer state from snapshot file '/tmp/kafka-logs/test-0/00000000000000000009.snapshot' for partition test-0 (kafka.log.ProducerStateManager)
+[2018-03-16 11:48:17,967] INFO Completed load of log test-0 with 1 log segments, log start offset 0 and log end offset 9 in 73 ms (kafka.log.Log)
+[2018-03-16 11:48:17,977] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-0/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-0/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-0/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-0/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:17,998] INFO Recovering unflushed segment 0 in log __consumer_offsets-0. (kafka.log.Log)
+[2018-03-16 11:48:18,020] INFO Loading producer state from offset 206 for partition __consumer_offsets-0 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,021] INFO Loading producer state from snapshot file '/tmp/kafka-logs/__consumer_offsets-0/00000000000000000206.snapshot' for partition __consumer_offsets-0 (kafka.log.ProducerStateManager)
+[2018-03-16 11:48:18,021] INFO Completed load of log __consumer_offsets-0 with 1 log segments, log start offset 0 and log end offset 206 in 46 ms (kafka.log.Log)
+[2018-03-16 11:48:18,027] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-29/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-29/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-29/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-29/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,028] INFO Recovering unflushed segment 0 in log __consumer_offsets-29. (kafka.log.Log)
+[2018-03-16 11:48:18,030] INFO Loading producer state from offset 0 for partition __consumer_offsets-29 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,030] INFO Completed load of log __consumer_offsets-29 with 1 log segments, log start offset 0 and log end offset 0 in 5 ms (kafka.log.Log)
+[2018-03-16 11:48:18,036] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-48/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-48/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-48/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-48/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,037] INFO Recovering unflushed segment 0 in log __consumer_offsets-48. (kafka.log.Log)
+[2018-03-16 11:48:18,038] INFO Loading producer state from offset 0 for partition __consumer_offsets-48 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,038] INFO Completed load of log __consumer_offsets-48 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,045] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-10/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-10/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-10/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-10/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,046] INFO Recovering unflushed segment 0 in log __consumer_offsets-10. (kafka.log.Log)
+[2018-03-16 11:48:18,047] INFO Loading producer state from offset 0 for partition __consumer_offsets-10 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,048] INFO Completed load of log __consumer_offsets-10 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,056] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-45/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-45/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-45/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-45/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,068] INFO Recovering unflushed segment 0 in log __consumer_offsets-45. (kafka.log.Log)
+[2018-03-16 11:48:18,087] INFO Loading producer state from offset 184 for partition __consumer_offsets-45 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,088] INFO Loading producer state from snapshot file '/tmp/kafka-logs/__consumer_offsets-45/00000000000000000184.snapshot' for partition __consumer_offsets-45 (kafka.log.ProducerStateManager)
+[2018-03-16 11:48:18,088] INFO Completed load of log __consumer_offsets-45 with 1 log segments, log start offset 0 and log end offset 184 in 34 ms (kafka.log.Log)
+[2018-03-16 11:48:18,095] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-26/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-26/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-26/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-26/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,096] INFO Recovering unflushed segment 0 in log __consumer_offsets-26. (kafka.log.Log)
+[2018-03-16 11:48:18,097] INFO Loading producer state from offset 0 for partition __consumer_offsets-26 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,097] INFO Completed load of log __consumer_offsets-26 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,109] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-7/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-7/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-7/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-7/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,110] INFO Recovering unflushed segment 0 in log __consumer_offsets-7. (kafka.log.Log)
+[2018-03-16 11:48:18,111] INFO Loading producer state from offset 0 for partition __consumer_offsets-7 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,111] INFO Completed load of log __consumer_offsets-7 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,119] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-42/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-42/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-42/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-42/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,120] INFO Recovering unflushed segment 0 in log __consumer_offsets-42. (kafka.log.Log)
+[2018-03-16 11:48:18,120] INFO Loading producer state from offset 0 for partition __consumer_offsets-42 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,121] INFO Completed load of log __consumer_offsets-42 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,127] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-4/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-4/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-4/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-4/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,128] INFO Recovering unflushed segment 0 in log __consumer_offsets-4. (kafka.log.Log)
+[2018-03-16 11:48:18,128] INFO Loading producer state from offset 0 for partition __consumer_offsets-4 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,129] INFO Completed load of log __consumer_offsets-4 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,135] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-23/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-23/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-23/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-23/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,136] INFO Recovering unflushed segment 0 in log __consumer_offsets-23. (kafka.log.Log)
+[2018-03-16 11:48:18,137] INFO Loading producer state from offset 0 for partition __consumer_offsets-23 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,137] INFO Completed load of log __consumer_offsets-23 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,141] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-1/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-1/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-1/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-1/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,142] INFO Recovering unflushed segment 0 in log __consumer_offsets-1. (kafka.log.Log)
+[2018-03-16 11:48:18,143] INFO Loading producer state from offset 0 for partition __consumer_offsets-1 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,143] INFO Completed load of log __consumer_offsets-1 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,171] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-20/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-20/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-20/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-20/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,172] INFO Recovering unflushed segment 0 in log __consumer_offsets-20. (kafka.log.Log)
+[2018-03-16 11:48:18,173] INFO Loading producer state from offset 0 for partition __consumer_offsets-20 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,173] INFO Completed load of log __consumer_offsets-20 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,202] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-39/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-39/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-39/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-39/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,209] INFO Recovering unflushed segment 0 in log __consumer_offsets-39. (kafka.log.Log)
+[2018-03-16 11:48:18,228] INFO Loading producer state from offset 215 for partition __consumer_offsets-39 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,229] INFO Loading producer state from snapshot file '/tmp/kafka-logs/__consumer_offsets-39/00000000000000000215.snapshot' for partition __consumer_offsets-39 (kafka.log.ProducerStateManager)
+[2018-03-16 11:48:18,229] INFO Completed load of log __consumer_offsets-39 with 1 log segments, log start offset 0 and log end offset 215 in 29 ms (kafka.log.Log)
+[2018-03-16 11:48:18,234] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-17/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-17/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-17/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-17/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,234] INFO Recovering unflushed segment 0 in log __consumer_offsets-17. (kafka.log.Log)
+[2018-03-16 11:48:18,235] INFO Loading producer state from offset 0 for partition __consumer_offsets-17 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,236] INFO Completed load of log __consumer_offsets-17 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,244] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-36/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-36/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-36/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-36/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,251] INFO Recovering unflushed segment 0 in log __consumer_offsets-36. (kafka.log.Log)
+[2018-03-16 11:48:18,274] INFO Loading producer state from offset 107 for partition __consumer_offsets-36 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,275] INFO Loading producer state from snapshot file '/tmp/kafka-logs/__consumer_offsets-36/00000000000000000107.snapshot' for partition __consumer_offsets-36 (kafka.log.ProducerStateManager)
+[2018-03-16 11:48:18,275] INFO Completed load of log __consumer_offsets-36 with 1 log segments, log start offset 0 and log end offset 107 in 33 ms (kafka.log.Log)
+[2018-03-16 11:48:18,279] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-14/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-14/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-14/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-14/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,280] INFO Recovering unflushed segment 0 in log __consumer_offsets-14. (kafka.log.Log)
+[2018-03-16 11:48:18,281] INFO Loading producer state from offset 0 for partition __consumer_offsets-14 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,281] INFO Completed load of log __consumer_offsets-14 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,286] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-33/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-33/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-33/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-33/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,287] INFO Recovering unflushed segment 0 in log __consumer_offsets-33. (kafka.log.Log)
+[2018-03-16 11:48:18,301] INFO Loading producer state from offset 0 for partition __consumer_offsets-33 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,302] INFO Completed load of log __consumer_offsets-33 with 1 log segments, log start offset 0 and log end offset 0 in 19 ms (kafka.log.Log)
+[2018-03-16 11:48:18,309] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-49/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-49/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-49/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-49/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,318] INFO Recovering unflushed segment 0 in log __consumer_offsets-49. (kafka.log.Log)
+[2018-03-16 11:48:18,324] INFO Loading producer state from offset 162 for partition __consumer_offsets-49 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,324] INFO Loading producer state from snapshot file '/tmp/kafka-logs/__consumer_offsets-49/00000000000000000162.snapshot' for partition __consumer_offsets-49 (kafka.log.ProducerStateManager)
+[2018-03-16 11:48:18,325] INFO Completed load of log __consumer_offsets-49 with 1 log segments, log start offset 0 and log end offset 162 in 18 ms (kafka.log.Log)
+[2018-03-16 11:48:18,328] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-11/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-11/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-11/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-11/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,329] INFO Recovering unflushed segment 0 in log __consumer_offsets-11. (kafka.log.Log)
+[2018-03-16 11:48:18,330] INFO Loading producer state from offset 0 for partition __consumer_offsets-11 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,330] INFO Completed load of log __consumer_offsets-11 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,334] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-30/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-30/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-30/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-30/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,339] INFO Recovering unflushed segment 0 in log __consumer_offsets-30. (kafka.log.Log)
+[2018-03-16 11:48:18,340] INFO Loading producer state from offset 0 for partition __consumer_offsets-30 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,341] INFO Completed load of log __consumer_offsets-30 with 1 log segments, log start offset 0 and log end offset 0 in 9 ms (kafka.log.Log)
+[2018-03-16 11:48:18,345] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-46/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-46/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-46/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-46/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,346] INFO Recovering unflushed segment 0 in log __consumer_offsets-46. (kafka.log.Log)
+[2018-03-16 11:48:18,346] INFO Loading producer state from offset 0 for partition __consumer_offsets-46 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,347] INFO Completed load of log __consumer_offsets-46 with 1 log segments, log start offset 0 and log end offset 0 in 5 ms (kafka.log.Log)
+[2018-03-16 11:48:18,359] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-27/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-27/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-27/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-27/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,359] INFO Recovering unflushed segment 0 in log __consumer_offsets-27. (kafka.log.Log)
+[2018-03-16 11:48:18,360] INFO Loading producer state from offset 0 for partition __consumer_offsets-27 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,360] INFO Completed load of log __consumer_offsets-27 with 1 log segments, log start offset 0 and log end offset 0 in 12 ms (kafka.log.Log)
+[2018-03-16 11:48:18,364] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-8/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-8/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-8/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-8/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,365] INFO Recovering unflushed segment 0 in log __consumer_offsets-8. (kafka.log.Log)
+[2018-03-16 11:48:18,366] INFO Loading producer state from offset 0 for partition __consumer_offsets-8 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,366] INFO Completed load of log __consumer_offsets-8 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,370] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-24/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-24/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-24/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-24/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,380] INFO Recovering unflushed segment 0 in log __consumer_offsets-24. (kafka.log.Log)
+[2018-03-16 11:48:18,381] INFO Loading producer state from offset 0 for partition __consumer_offsets-24 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,381] INFO Completed load of log __consumer_offsets-24 with 1 log segments, log start offset 0 and log end offset 0 in 14 ms (kafka.log.Log)
+[2018-03-16 11:48:18,385] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-43/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-43/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-43/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-43/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,386] INFO Recovering unflushed segment 0 in log __consumer_offsets-43. (kafka.log.Log)
+[2018-03-16 11:48:18,386] INFO Loading producer state from offset 0 for partition __consumer_offsets-43 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,387] INFO Completed load of log __consumer_offsets-43 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,390] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-5/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-5/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-5/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-5/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,399] INFO Recovering unflushed segment 0 in log __consumer_offsets-5. (kafka.log.Log)
+[2018-03-16 11:48:18,400] INFO Loading producer state from offset 0 for partition __consumer_offsets-5 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,400] INFO Completed load of log __consumer_offsets-5 with 1 log segments, log start offset 0 and log end offset 0 in 12 ms (kafka.log.Log)
+[2018-03-16 11:48:18,417] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-21/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-21/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-21/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-21/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,431] INFO Recovering unflushed segment 0 in log __consumer_offsets-21. (kafka.log.Log)
+[2018-03-16 11:48:18,435] INFO Loading producer state from offset 9 for partition __consumer_offsets-21 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,436] INFO Loading producer state from snapshot file '/tmp/kafka-logs/__consumer_offsets-21/00000000000000000009.snapshot' for partition __consumer_offsets-21 (kafka.log.ProducerStateManager)
+[2018-03-16 11:48:18,436] INFO Completed load of log __consumer_offsets-21 with 1 log segments, log start offset 0 and log end offset 9 in 21 ms (kafka.log.Log)
+[2018-03-16 11:48:18,439] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-2/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-2/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-2/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-2/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,440] INFO Recovering unflushed segment 0 in log __consumer_offsets-2. (kafka.log.Log)
+[2018-03-16 11:48:18,441] INFO Loading producer state from offset 0 for partition __consumer_offsets-2 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,441] INFO Completed load of log __consumer_offsets-2 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,445] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-40/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-40/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-40/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-40/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,453] INFO Recovering unflushed segment 0 in log __consumer_offsets-40. (kafka.log.Log)
+[2018-03-16 11:48:18,454] INFO Loading producer state from offset 0 for partition __consumer_offsets-40 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,454] INFO Completed load of log __consumer_offsets-40 with 1 log segments, log start offset 0 and log end offset 0 in 11 ms (kafka.log.Log)
+[2018-03-16 11:48:18,458] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-37/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-37/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-37/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-37/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,458] INFO Recovering unflushed segment 0 in log __consumer_offsets-37. (kafka.log.Log)
+[2018-03-16 11:48:18,459] INFO Loading producer state from offset 0 for partition __consumer_offsets-37 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,459] INFO Completed load of log __consumer_offsets-37 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,481] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-18/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-18/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-18/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-18/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,491] INFO Recovering unflushed segment 0 in log __consumer_offsets-18. (kafka.log.Log)
+[2018-03-16 11:48:18,495] INFO Loading producer state from offset 4 for partition __consumer_offsets-18 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,495] INFO Loading producer state from snapshot file '/tmp/kafka-logs/__consumer_offsets-18/00000000000000000004.snapshot' for partition __consumer_offsets-18 (kafka.log.ProducerStateManager)
+[2018-03-16 11:48:18,495] INFO Completed load of log __consumer_offsets-18 with 1 log segments, log start offset 0 and log end offset 4 in 17 ms (kafka.log.Log)
+[2018-03-16 11:48:18,498] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-34/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-34/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-34/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-34/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,499] INFO Recovering unflushed segment 0 in log __consumer_offsets-34. (kafka.log.Log)
+[2018-03-16 11:48:18,499] INFO Loading producer state from offset 0 for partition __consumer_offsets-34 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,500] INFO Completed load of log __consumer_offsets-34 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,503] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-15/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-15/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-15/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-15/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,504] INFO Recovering unflushed segment 0 in log __consumer_offsets-15. (kafka.log.Log)
+[2018-03-16 11:48:18,504] INFO Loading producer state from offset 0 for partition __consumer_offsets-15 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,505] INFO Completed load of log __consumer_offsets-15 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,523] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-12/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-12/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-12/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-12/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,524] INFO Recovering unflushed segment 0 in log __consumer_offsets-12. (kafka.log.Log)
+[2018-03-16 11:48:18,525] INFO Loading producer state from offset 0 for partition __consumer_offsets-12 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,525] INFO Completed load of log __consumer_offsets-12 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,529] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-31/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-31/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-31/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-31/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,529] INFO Recovering unflushed segment 0 in log __consumer_offsets-31. (kafka.log.Log)
+[2018-03-16 11:48:18,530] INFO Loading producer state from offset 0 for partition __consumer_offsets-31 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,530] INFO Completed load of log __consumer_offsets-31 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,548] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-9/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-9/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-9/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-9/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,548] INFO Recovering unflushed segment 0 in log __consumer_offsets-9. (kafka.log.Log)
+[2018-03-16 11:48:18,549] INFO Loading producer state from offset 0 for partition __consumer_offsets-9 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,549] INFO Completed load of log __consumer_offsets-9 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,553] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-47/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-47/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-47/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-47/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,553] INFO Recovering unflushed segment 0 in log __consumer_offsets-47. (kafka.log.Log)
+[2018-03-16 11:48:18,554] INFO Loading producer state from offset 0 for partition __consumer_offsets-47 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,567] INFO Completed load of log __consumer_offsets-47 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,571] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-19/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-19/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-19/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-19/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,572] INFO Recovering unflushed segment 0 in log __consumer_offsets-19. (kafka.log.Log)
+[2018-03-16 11:48:18,572] INFO Loading producer state from offset 0 for partition __consumer_offsets-19 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,572] INFO Completed load of log __consumer_offsets-19 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,576] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-28/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-28/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-28/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-28/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,577] INFO Recovering unflushed segment 0 in log __consumer_offsets-28. (kafka.log.Log)
+[2018-03-16 11:48:18,577] INFO Loading producer state from offset 0 for partition __consumer_offsets-28 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,577] INFO Completed load of log __consumer_offsets-28 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,589] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-38/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-38/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-38/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-38/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,599] INFO Recovering unflushed segment 0 in log __consumer_offsets-38. (kafka.log.Log)
+[2018-03-16 11:48:18,631] INFO Loading producer state from offset 888 for partition __consumer_offsets-38 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,632] INFO Loading producer state from snapshot file '/tmp/kafka-logs/__consumer_offsets-38/00000000000000000888.snapshot' for partition __consumer_offsets-38 (kafka.log.ProducerStateManager)
+[2018-03-16 11:48:18,632] INFO Completed load of log __consumer_offsets-38 with 1 log segments, log start offset 0 and log end offset 888 in 45 ms (kafka.log.Log)
+[2018-03-16 11:48:18,636] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-35/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-35/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-35/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-35/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,636] INFO Recovering unflushed segment 0 in log __consumer_offsets-35. (kafka.log.Log)
+[2018-03-16 11:48:18,637] INFO Loading producer state from offset 0 for partition __consumer_offsets-35 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,637] INFO Completed load of log __consumer_offsets-35 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,640] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-44/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-44/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-44/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-44/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,641] INFO Recovering unflushed segment 0 in log __consumer_offsets-44. (kafka.log.Log)
+[2018-03-16 11:48:18,642] INFO Loading producer state from offset 0 for partition __consumer_offsets-44 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,642] INFO Completed load of log __consumer_offsets-44 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,653] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-6/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-6/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-6/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-6/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,653] INFO Recovering unflushed segment 0 in log __consumer_offsets-6. (kafka.log.Log)
+[2018-03-16 11:48:18,654] INFO Loading producer state from offset 0 for partition __consumer_offsets-6 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,654] INFO Completed load of log __consumer_offsets-6 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,657] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-25/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-25/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-25/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-25/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,658] INFO Recovering unflushed segment 0 in log __consumer_offsets-25. (kafka.log.Log)
+[2018-03-16 11:48:18,659] INFO Loading producer state from offset 0 for partition __consumer_offsets-25 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,659] INFO Completed load of log __consumer_offsets-25 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,681] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-16/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-16/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-16/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-16/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,682] INFO Recovering unflushed segment 0 in log __consumer_offsets-16. (kafka.log.Log)
+[2018-03-16 11:48:18,683] INFO Loading producer state from offset 0 for partition __consumer_offsets-16 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,683] INFO Completed load of log __consumer_offsets-16 with 1 log segments, log start offset 0 and log end offset 0 in 23 ms (kafka.log.Log)
+[2018-03-16 11:48:18,686] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-22/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-22/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-22/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-22/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,687] INFO Recovering unflushed segment 0 in log __consumer_offsets-22. (kafka.log.Log)
+[2018-03-16 11:48:18,688] INFO Loading producer state from offset 0 for partition __consumer_offsets-22 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,688] INFO Completed load of log __consumer_offsets-22 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,704] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-41/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-41/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-41/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-41/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,705] INFO Recovering unflushed segment 0 in log __consumer_offsets-41. (kafka.log.Log)
+[2018-03-16 11:48:18,705] INFO Loading producer state from offset 0 for partition __consumer_offsets-41 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,705] INFO Completed load of log __consumer_offsets-41 with 1 log segments, log start offset 0 and log end offset 0 in 16 ms (kafka.log.Log)
+[2018-03-16 11:48:18,709] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-32/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-32/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-32/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-32/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,710] INFO Recovering unflushed segment 0 in log __consumer_offsets-32. (kafka.log.Log)
+[2018-03-16 11:48:18,710] INFO Loading producer state from offset 0 for partition __consumer_offsets-32 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,710] INFO Completed load of log __consumer_offsets-32 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-03-16 11:48:18,717] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-3/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-3/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-3/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-3/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,718] INFO Recovering unflushed segment 0 in log __consumer_offsets-3. (kafka.log.Log)
+[2018-03-16 11:48:18,719] INFO Loading producer state from offset 0 for partition __consumer_offsets-3 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,719] INFO Completed load of log __consumer_offsets-3 with 1 log segments, log start offset 0 and log end offset 0 in 7 ms (kafka.log.Log)
+[2018-03-16 11:48:18,722] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/__consumer_offsets-13/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/__consumer_offsets-13/00000000000000000000.timeindex, /tmp/kafka-logs/__consumer_offsets-13/00000000000000000000.index, and /tmp/kafka-logs/__consumer_offsets-13/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,723] INFO Recovering unflushed segment 0 in log __consumer_offsets-13. (kafka.log.Log)
+[2018-03-16 11:48:18,724] INFO Loading producer state from offset 0 for partition __consumer_offsets-13 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,724] INFO Completed load of log __consumer_offsets-13 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,745] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/java_in_use_topic-0/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/java_in_use_topic-0/00000000000000000000.timeindex, /tmp/kafka-logs/java_in_use_topic-0/00000000000000000000.index, and /tmp/kafka-logs/java_in_use_topic-0/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,761] INFO Recovering unflushed segment 0 in log java_in_use_topic-0. (kafka.log.Log)
+[2018-03-16 11:48:18,768] INFO Loading producer state from offset 5 for partition java_in_use_topic-0 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,768] INFO Loading producer state from snapshot file '/tmp/kafka-logs/java_in_use_topic-0/00000000000000000005.snapshot' for partition java_in_use_topic-0 (kafka.log.ProducerStateManager)
+[2018-03-16 11:48:18,768] INFO Completed load of log java_in_use_topic-0 with 1 log segments, log start offset 0 and log end offset 5 in 25 ms (kafka.log.Log)
+[2018-03-16 11:48:18,771] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (/tmp/kafka-logs/demo.topic-0/00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting /tmp/kafka-logs/demo.topic-0/00000000000000000000.timeindex, /tmp/kafka-logs/demo.topic-0/00000000000000000000.index, and /tmp/kafka-logs/demo.topic-0/00000000000000000000.txnindex and rebuilding index... (kafka.log.Log)
+[2018-03-16 11:48:18,772] INFO Recovering unflushed segment 0 in log demo.topic-0. (kafka.log.Log)
+[2018-03-16 11:48:18,772] INFO Loading producer state from offset 0 for partition demo.topic-0 with message format version 2 (kafka.log.Log)
+[2018-03-16 11:48:18,773] INFO Completed load of log demo.topic-0 with 1 log segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-03-16 11:48:18,775] INFO Logs loading complete in 931 ms. (kafka.log.LogManager)
+[2018-03-16 11:48:18,856] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2018-03-16 11:48:18,857] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2018-03-16 11:48:19,264] INFO Awaiting socket connections on 10.128.64.119:9092. (kafka.network.Acceptor)
+[2018-03-16 11:48:19,279] INFO [SocketServer brokerId=0] Started 1 acceptor threads (kafka.network.SocketServer)
+[2018-03-16 11:48:19,301] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-16 11:48:19,303] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-16 11:48:19,313] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-16 11:48:19,326] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2018-03-16 11:48:19,374] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-16 11:48:19,390] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-16 11:48:19,392] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-16 11:48:19,399] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-16 11:48:19,407] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-16 11:48:19,416] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-16 11:48:19,474] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-16 11:48:19,478] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:19,491] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:2000,blockEndProducerId:2999) by writing to Zk with path version 3 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-03-16 11:48:19,600] INFO [TransactionCoordinator id=0] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-16 11:48:19,615] INFO [TransactionCoordinator id=0] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-16 11:48:19,625] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-16 11:48:19,896] INFO Got user-level KeeperException when processing sessionid:0x1622e9ef3090000 type:delete cxid:0xd7 zxid:0x124 txntype:-1 reqpath:n/a Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-16 11:48:19,952] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-16 11:48:19,954] INFO Got user-level KeeperException when processing sessionid:0x1622e9ef3090000 type:create cxid:0xe5 zxid:0x125 txntype:-1 reqpath:n/a Error Path:/brokers Error:KeeperErrorCode = NodeExists for /brokers (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-16 11:48:19,954] INFO Got user-level KeeperException when processing sessionid:0x1622e9ef3090000 type:create cxid:0xe6 zxid:0x126 txntype:-1 reqpath:n/a Error Path:/brokers/ids Error:KeeperErrorCode = NodeExists for /brokers/ids (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-16 11:48:19,974] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-16 11:48:19,975] INFO Registered broker 0 at path /brokers/ids/0 with addresses: EndPoint(10.128.64.119,9092,ListenerName(PLAINTEXT),PLAINTEXT) (kafka.utils.ZkUtils)
+[2018-03-16 11:48:19,978] INFO Kafka version : 1.0.1 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-03-16 11:48:19,978] INFO Kafka commitId : c0518aa65f25317e (org.apache.kafka.common.utils.AppInfoParser)
+[2018-03-16 11:48:19,979] INFO [KafkaServer id=0] started (kafka.server.KafkaServer)
+[2018-03-16 11:48:20,186] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions __consumer_offsets-22,__consumer_offsets-30,__consumer_offsets-8,__consumer_offsets-21,__consumer_offsets-4,java_in_use_topic-0,__consumer_offsets-27,__consumer_offsets-7,__consumer_offsets-9,__consumer_offsets-46,__consumer_offsets-25,__consumer_offsets-35,__consumer_offsets-41,__consumer_offsets-33,__consumer_offsets-23,__consumer_offsets-49,__consumer_offsets-47,__consumer_offsets-16,test-0,__consumer_offsets-28,__consumer_offsets-31,__consumer_offsets-36,__consumer_offsets-42,__consumer_offsets-3,__consumer_offsets-18,__consumer_offsets-37,__consumer_offsets-15,__consumer_offsets-24,__consumer_offsets-38,__consumer_offsets-17,__consumer_offsets-48,__consumer_offsets-19,__consumer_offsets-11,__consumer_offsets-13,__consumer_offsets-2,__consumer_offsets-43,__consumer_offsets-6,__consumer_offsets-14,demo.topic-0,__consumer_offsets-20,__consumer_offsets-0,__consumer_offsets-44,__consumer_offsets-39,__consumer_offsets-12,__consumer_offsets-45,__consumer_offsets-1,__consumer_offsets-5,__consumer_offsets-26,__consumer_offsets-29,__consumer_offsets-34,__consumer_offsets-10,__consumer_offsets-32,__consumer_offsets-40 (kafka.server.ReplicaFetcherManager)
+[2018-03-16 11:48:20,217] INFO Replica loaded for partition __consumer_offsets-0 with initial high watermark 206 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,218] INFO [Partition __consumer_offsets-0 broker=0] __consumer_offsets-0 starts at Leader Epoch 1 from offset 206. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,243] INFO Replica loaded for partition __consumer_offsets-29 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,243] INFO [Partition __consumer_offsets-29 broker=0] __consumer_offsets-29 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,255] INFO Replica loaded for partition __consumer_offsets-48 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,255] INFO [Partition __consumer_offsets-48 broker=0] __consumer_offsets-48 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,258] INFO Replica loaded for partition __consumer_offsets-10 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,258] INFO [Partition __consumer_offsets-10 broker=0] __consumer_offsets-10 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,269] INFO Replica loaded for partition __consumer_offsets-45 with initial high watermark 184 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,269] INFO [Partition __consumer_offsets-45 broker=0] __consumer_offsets-45 starts at Leader Epoch 1 from offset 184. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,272] INFO Replica loaded for partition __consumer_offsets-26 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,272] INFO [Partition __consumer_offsets-26 broker=0] __consumer_offsets-26 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,289] INFO Replica loaded for partition java_in_use_topic-0 with initial high watermark 5 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,289] INFO [Partition java_in_use_topic-0 broker=0] java_in_use_topic-0 starts at Leader Epoch 0 from offset 5. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,292] INFO Replica loaded for partition __consumer_offsets-7 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,292] INFO [Partition __consumer_offsets-7 broker=0] __consumer_offsets-7 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,302] INFO Replica loaded for partition __consumer_offsets-42 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,302] INFO [Partition __consumer_offsets-42 broker=0] __consumer_offsets-42 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,306] INFO Replica loaded for partition __consumer_offsets-4 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,306] INFO [Partition __consumer_offsets-4 broker=0] __consumer_offsets-4 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,321] INFO Replica loaded for partition __consumer_offsets-23 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,321] INFO [Partition __consumer_offsets-23 broker=0] __consumer_offsets-23 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,324] INFO Replica loaded for partition __consumer_offsets-1 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,324] INFO [Partition __consumer_offsets-1 broker=0] __consumer_offsets-1 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,329] INFO Replica loaded for partition __consumer_offsets-20 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,329] INFO [Partition __consumer_offsets-20 broker=0] __consumer_offsets-20 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,347] INFO Replica loaded for partition __consumer_offsets-39 with initial high watermark 215 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,347] INFO [Partition __consumer_offsets-39 broker=0] __consumer_offsets-39 starts at Leader Epoch 1 from offset 215. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,350] INFO Replica loaded for partition __consumer_offsets-17 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,350] INFO [Partition __consumer_offsets-17 broker=0] __consumer_offsets-17 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,359] INFO Replica loaded for partition __consumer_offsets-36 with initial high watermark 107 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,359] INFO [Partition __consumer_offsets-36 broker=0] __consumer_offsets-36 starts at Leader Epoch 1 from offset 107. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,362] INFO Replica loaded for partition __consumer_offsets-14 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,362] INFO [Partition __consumer_offsets-14 broker=0] __consumer_offsets-14 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,364] INFO Replica loaded for partition __consumer_offsets-33 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,364] INFO [Partition __consumer_offsets-33 broker=0] __consumer_offsets-33 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,367] INFO Replica loaded for partition __consumer_offsets-49 with initial high watermark 162 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,367] INFO [Partition __consumer_offsets-49 broker=0] __consumer_offsets-49 starts at Leader Epoch 1 from offset 162. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,370] INFO Replica loaded for partition __consumer_offsets-11 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,370] INFO [Partition __consumer_offsets-11 broker=0] __consumer_offsets-11 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,372] INFO Replica loaded for partition __consumer_offsets-30 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,372] INFO [Partition __consumer_offsets-30 broker=0] __consumer_offsets-30 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,375] INFO Replica loaded for partition test-0 with initial high watermark 9 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,375] INFO [Partition test-0 broker=0] test-0 starts at Leader Epoch 1 from offset 9. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,394] INFO Replica loaded for partition __consumer_offsets-46 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,394] INFO [Partition __consumer_offsets-46 broker=0] __consumer_offsets-46 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,397] INFO Replica loaded for partition __consumer_offsets-27 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,397] INFO [Partition __consumer_offsets-27 broker=0] __consumer_offsets-27 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,400] INFO Replica loaded for partition __consumer_offsets-8 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,400] INFO [Partition __consumer_offsets-8 broker=0] __consumer_offsets-8 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,403] INFO Replica loaded for partition __consumer_offsets-24 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,403] INFO [Partition __consumer_offsets-24 broker=0] __consumer_offsets-24 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,406] INFO Replica loaded for partition __consumer_offsets-43 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,406] INFO [Partition __consumer_offsets-43 broker=0] __consumer_offsets-43 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,411] INFO Replica loaded for partition __consumer_offsets-5 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,411] INFO [Partition __consumer_offsets-5 broker=0] __consumer_offsets-5 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,413] INFO Replica loaded for partition __consumer_offsets-21 with initial high watermark 9 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,413] INFO [Partition __consumer_offsets-21 broker=0] __consumer_offsets-21 starts at Leader Epoch 1 from offset 9. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,414] INFO Replica loaded for partition __consumer_offsets-2 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,414] INFO [Partition __consumer_offsets-2 broker=0] __consumer_offsets-2 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,421] INFO Replica loaded for partition __consumer_offsets-40 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,421] INFO [Partition __consumer_offsets-40 broker=0] __consumer_offsets-40 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,422] INFO Replica loaded for partition __consumer_offsets-37 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,422] INFO [Partition __consumer_offsets-37 broker=0] __consumer_offsets-37 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,424] INFO Replica loaded for partition __consumer_offsets-18 with initial high watermark 4 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,424] INFO [Partition __consumer_offsets-18 broker=0] __consumer_offsets-18 starts at Leader Epoch 1 from offset 4. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,426] INFO Replica loaded for partition __consumer_offsets-34 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,426] INFO [Partition __consumer_offsets-34 broker=0] __consumer_offsets-34 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,434] INFO Replica loaded for partition __consumer_offsets-15 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,434] INFO [Partition __consumer_offsets-15 broker=0] __consumer_offsets-15 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,443] INFO Replica loaded for partition __consumer_offsets-12 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,443] INFO [Partition __consumer_offsets-12 broker=0] __consumer_offsets-12 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,446] INFO Replica loaded for partition __consumer_offsets-31 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,446] INFO [Partition __consumer_offsets-31 broker=0] __consumer_offsets-31 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,448] INFO Replica loaded for partition __consumer_offsets-9 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,448] INFO [Partition __consumer_offsets-9 broker=0] __consumer_offsets-9 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,454] INFO Replica loaded for partition __consumer_offsets-47 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,454] INFO [Partition __consumer_offsets-47 broker=0] __consumer_offsets-47 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,455] INFO Replica loaded for partition __consumer_offsets-19 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,455] INFO [Partition __consumer_offsets-19 broker=0] __consumer_offsets-19 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,459] INFO Replica loaded for partition __consumer_offsets-28 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,459] INFO [Partition __consumer_offsets-28 broker=0] __consumer_offsets-28 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,460] INFO Replica loaded for partition __consumer_offsets-38 with initial high watermark 888 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,460] INFO [Partition __consumer_offsets-38 broker=0] __consumer_offsets-38 starts at Leader Epoch 1 from offset 888. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,471] INFO Replica loaded for partition __consumer_offsets-35 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,471] INFO [Partition __consumer_offsets-35 broker=0] __consumer_offsets-35 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,477] INFO Replica loaded for partition demo.topic-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,477] INFO [Partition demo.topic-0 broker=0] demo.topic-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,479] INFO Replica loaded for partition __consumer_offsets-6 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,479] INFO [Partition __consumer_offsets-6 broker=0] __consumer_offsets-6 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,480] INFO Replica loaded for partition __consumer_offsets-44 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,480] INFO [Partition __consumer_offsets-44 broker=0] __consumer_offsets-44 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,481] INFO Replica loaded for partition __consumer_offsets-25 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,481] INFO [Partition __consumer_offsets-25 broker=0] __consumer_offsets-25 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,482] INFO Replica loaded for partition __consumer_offsets-16 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,482] INFO [Partition __consumer_offsets-16 broker=0] __consumer_offsets-16 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,483] INFO Replica loaded for partition __consumer_offsets-22 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,483] INFO [Partition __consumer_offsets-22 broker=0] __consumer_offsets-22 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,484] INFO Replica loaded for partition __consumer_offsets-41 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,484] INFO [Partition __consumer_offsets-41 broker=0] __consumer_offsets-41 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,499] INFO Replica loaded for partition __consumer_offsets-32 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,500] INFO [Partition __consumer_offsets-32 broker=0] __consumer_offsets-32 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,502] INFO Replica loaded for partition __consumer_offsets-3 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,502] INFO [Partition __consumer_offsets-3 broker=0] __consumer_offsets-3 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,505] INFO Replica loaded for partition __consumer_offsets-13 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-03-16 11:48:20,505] INFO [Partition __consumer_offsets-13 broker=0] __consumer_offsets-13 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-22 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-25 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-28 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-31 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-34 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-37 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-40 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-43 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-46 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-49 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-41 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-44 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-47 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-1 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-4 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-10 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-7 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-16 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-19 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-13 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-2 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-5 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-8 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,511] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-11 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,512] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-14 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,512] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-17 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,512] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-20 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,512] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-23 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,512] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-26 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-29 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-32 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-35 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-38 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-0 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-3 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-6 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-9 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-12 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-15 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-18 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-21 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-24 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-27 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-30 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-33 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-36 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-39 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-42 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-45 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,527] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-48 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,525] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-22 in 6 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,530] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-25 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,530] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-28 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,530] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-31 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,530] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-34 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,530] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-37 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,531] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-40 in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,531] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-43 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,531] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-46 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,627] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-49 in 96 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,627] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-41 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,627] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-44 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,627] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-47 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,627] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-1 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,627] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-4 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,628] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-10 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,628] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-7 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,628] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-16 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,628] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-19 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,628] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-13 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,628] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-2 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,628] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-5 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,629] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-8 in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,629] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-11 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,629] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-14 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,629] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-17 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,629] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-20 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,629] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-23 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,629] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-26 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,629] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-29 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,630] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-32 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,630] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-35 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,643] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions __consumer_offsets-22,__consumer_offsets-30,__consumer_offsets-8,__consumer_offsets-21,__consumer_offsets-4,java_in_use_topic-0,__consumer_offsets-27,__consumer_offsets-7,__consumer_offsets-9,__consumer_offsets-46,__consumer_offsets-25,__consumer_offsets-35,__consumer_offsets-41,__consumer_offsets-33,__consumer_offsets-23,__consumer_offsets-49,__consumer_offsets-47,__consumer_offsets-16,test-0,__consumer_offsets-28,__consumer_offsets-31,__consumer_offsets-36,__consumer_offsets-42,__consumer_offsets-3,__consumer_offsets-18,__consumer_offsets-37,__consumer_offsets-15,__consumer_offsets-24,__consumer_offsets-38,__consumer_offsets-17,__consumer_offsets-48,__consumer_offsets-19,__consumer_offsets-11,__consumer_offsets-13,__consumer_offsets-2,__consumer_offsets-43,__consumer_offsets-6,__consumer_offsets-14,demo.topic-0,__consumer_offsets-20,__consumer_offsets-0,__consumer_offsets-44,__consumer_offsets-39,__consumer_offsets-12,__consumer_offsets-45,__consumer_offsets-1,__consumer_offsets-5,__consumer_offsets-26,__consumer_offsets-29,__consumer_offsets-34,__consumer_offsets-10,__consumer_offsets-32,__consumer_offsets-40 (kafka.server.ReplicaFetcherManager)
+[2018-03-16 11:48:20,643] INFO [Partition __consumer_offsets-0 broker=0] __consumer_offsets-0 starts at Leader Epoch 2 from offset 206. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,643] INFO [Partition __consumer_offsets-29 broker=0] __consumer_offsets-29 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,644] INFO [Partition __consumer_offsets-48 broker=0] __consumer_offsets-48 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,644] INFO [Partition __consumer_offsets-10 broker=0] __consumer_offsets-10 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,644] INFO [Partition __consumer_offsets-45 broker=0] __consumer_offsets-45 starts at Leader Epoch 2 from offset 184. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,644] INFO [Partition __consumer_offsets-26 broker=0] __consumer_offsets-26 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,644] INFO [Partition java_in_use_topic-0 broker=0] java_in_use_topic-0 starts at Leader Epoch 1 from offset 5. Previous Leader Epoch was: 0 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,644] INFO [Partition __consumer_offsets-7 broker=0] __consumer_offsets-7 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,644] INFO [Partition __consumer_offsets-42 broker=0] __consumer_offsets-42 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,644] INFO [Partition __consumer_offsets-4 broker=0] __consumer_offsets-4 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,645] INFO [Partition __consumer_offsets-23 broker=0] __consumer_offsets-23 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,645] INFO [Partition __consumer_offsets-1 broker=0] __consumer_offsets-1 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,645] INFO [Partition __consumer_offsets-20 broker=0] __consumer_offsets-20 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,645] INFO [Partition __consumer_offsets-39 broker=0] __consumer_offsets-39 starts at Leader Epoch 2 from offset 215. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,645] INFO [Partition __consumer_offsets-17 broker=0] __consumer_offsets-17 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,645] INFO [Partition __consumer_offsets-36 broker=0] __consumer_offsets-36 starts at Leader Epoch 2 from offset 107. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,645] INFO [Partition __consumer_offsets-14 broker=0] __consumer_offsets-14 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,645] INFO [Partition __consumer_offsets-33 broker=0] __consumer_offsets-33 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,645] INFO [Partition __consumer_offsets-49 broker=0] __consumer_offsets-49 starts at Leader Epoch 2 from offset 162. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,646] INFO [Partition __consumer_offsets-11 broker=0] __consumer_offsets-11 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,646] INFO [Partition __consumer_offsets-30 broker=0] __consumer_offsets-30 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,646] INFO [Partition test-0 broker=0] test-0 starts at Leader Epoch 2 from offset 9. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,646] INFO [Partition __consumer_offsets-46 broker=0] __consumer_offsets-46 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,646] INFO [Partition __consumer_offsets-27 broker=0] __consumer_offsets-27 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,646] INFO [Partition __consumer_offsets-8 broker=0] __consumer_offsets-8 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,646] INFO [Partition __consumer_offsets-24 broker=0] __consumer_offsets-24 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,658] INFO [Partition __consumer_offsets-43 broker=0] __consumer_offsets-43 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,658] INFO [Partition __consumer_offsets-5 broker=0] __consumer_offsets-5 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,658] INFO [Partition __consumer_offsets-21 broker=0] __consumer_offsets-21 starts at Leader Epoch 2 from offset 9. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,658] INFO [Partition __consumer_offsets-2 broker=0] __consumer_offsets-2 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,659] INFO [Partition __consumer_offsets-40 broker=0] __consumer_offsets-40 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,659] INFO [Partition __consumer_offsets-37 broker=0] __consumer_offsets-37 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,659] INFO [Partition __consumer_offsets-18 broker=0] __consumer_offsets-18 starts at Leader Epoch 2 from offset 4. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,659] INFO [Partition __consumer_offsets-34 broker=0] __consumer_offsets-34 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,659] INFO [Partition __consumer_offsets-15 broker=0] __consumer_offsets-15 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,659] INFO [Partition __consumer_offsets-12 broker=0] __consumer_offsets-12 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,659] INFO [Partition __consumer_offsets-31 broker=0] __consumer_offsets-31 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,659] INFO [Partition __consumer_offsets-9 broker=0] __consumer_offsets-9 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,659] INFO [Partition __consumer_offsets-47 broker=0] __consumer_offsets-47 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,660] INFO [Partition __consumer_offsets-19 broker=0] __consumer_offsets-19 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,660] INFO [Partition __consumer_offsets-28 broker=0] __consumer_offsets-28 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,660] INFO [Partition __consumer_offsets-38 broker=0] __consumer_offsets-38 starts at Leader Epoch 2 from offset 888. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,660] INFO [Partition __consumer_offsets-35 broker=0] __consumer_offsets-35 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,660] INFO [Partition demo.topic-0 broker=0] demo.topic-0 starts at Leader Epoch 1 from offset 0. Previous Leader Epoch was: 0 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,660] INFO [Partition __consumer_offsets-6 broker=0] __consumer_offsets-6 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,660] INFO [Partition __consumer_offsets-44 broker=0] __consumer_offsets-44 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,660] INFO [Partition __consumer_offsets-25 broker=0] __consumer_offsets-25 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,660] INFO [Partition __consumer_offsets-16 broker=0] __consumer_offsets-16 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,661] INFO [Partition __consumer_offsets-22 broker=0] __consumer_offsets-22 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,661] INFO [Partition __consumer_offsets-41 broker=0] __consumer_offsets-41 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,661] INFO [Partition __consumer_offsets-32 broker=0] __consumer_offsets-32 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,661] INFO [Partition __consumer_offsets-3 broker=0] __consumer_offsets-3 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,661] INFO [Partition __consumer_offsets-13 broker=0] __consumer_offsets-13 starts at Leader Epoch 2 from offset 0. Previous Leader Epoch was: 1 (kafka.cluster.Partition)
+[2018-03-16 11:48:20,730] INFO [GroupCoordinator 0]: Loading group metadata for console-consumer-66203 with generation 2 (kafka.coordinator.group.GroupCoordinator)
+[2018-03-16 11:48:20,731] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-38 in 101 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,772] INFO [GroupCoordinator 0]: Loading group metadata for console-consumer-12132 with generation 2 (kafka.coordinator.group.GroupCoordinator)
+[2018-03-16 11:48:20,772] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-0 in 41 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,772] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-3 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,772] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-6 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,772] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-9 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,772] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-12 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,772] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-15 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,775] INFO [GroupCoordinator 0]: Loading group metadata for console-consumer-97821 with generation 2 (kafka.coordinator.group.GroupCoordinator)
+[2018-03-16 11:48:20,776] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-18 in 3 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,779] INFO [GroupCoordinator 0]: Loading group metadata for console-consumer-29810 with generation 2 (kafka.coordinator.group.GroupCoordinator)
+[2018-03-16 11:48:20,779] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-21 in 3 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,779] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-24 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,779] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-27 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,779] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-30 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,779] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-33 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,802] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-36 in 23 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,806] INFO [GroupCoordinator 0]: Loading group metadata for console-consumer-50229 with generation 2 (kafka.coordinator.group.GroupCoordinator)
+[2018-03-16 11:48:20,806] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-39 in 4 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,807] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-42 in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,823] INFO [GroupCoordinator 0]: Loading group metadata for console-consumer-60495 with generation 2 (kafka.coordinator.group.GroupCoordinator)
+[2018-03-16 11:48:20,823] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-45 in 16 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:48:20,823] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-48 in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:58:19,420] INFO [GroupMetadataManager brokerId=0] Group console-consumer-66203 transitioned to Dead in generation 2 (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-16 11:58:19,431] INFO Updated PartitionLeaderEpoch. New: {epoch:2, offset:888}, Current: {epoch:1, offset0} for Partition: __consumer_offsets-38. Cache now contains 1 entries. (kafka.server.epoch.LeaderEpochFileCache)
+[2018-03-16 11:58:19,439] INFO [GroupMetadataManager brokerId=0] Removed 1 expired offsets in 23 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+
